@@ -1,0 +1,169 @@
+*{margin: 0;padding: 0;}
+html, body
+{
+	background: #333;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.svg-wrapper
+{
+	height: 60px;
+	position: relative;
+	top: 28%;
+	left: 100px;
+	transform: translateY(-50%);
+	width: 320px;
+}
+.shape
+{
+	fill: transparent;
+	stroke-dasharray: 140 540;
+	stroke-dashoffset: -474;
+	stroke-width: 8px;
+	stroke: #F33C78;
+	cursor:pointer; 
+
+
+
+}
+.text
+{
+	color: #fff;
+	font-family: "Roboto Condensed";
+	font-size: 22px;
+	letter-spacing: 8px;
+	line-height: 32px;
+	position: relative;
+	top: -48px;
+	cursor: pointer;
+	
+}
+@keyframes draw {
+	0%{
+		stroke-dasharray: 140 540;
+		stroke-dashoffset: -474;
+		stroke-width: 8px;
+	}
+	100%{
+		stroke-dasharray: 760;
+		stroke-dashoffset: 0;
+		stroke-width: 4px;
+		}
+	}
+	.svg-wrapper:hover .shape
+	{
+		-webkit-animation: 0.5s draw linear forwards ;
+		animation: 0.5s draw linear forwards;
+	}
+	.button2
+	{
+		width: 320px;
+		height: 60px;
+		border:2px solid #F33C78 ;
+		border-radius: 0px;
+		position: relative;
+		top: 8.2%;
+		left: 500px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.button3
+	{
+		width: 320px;
+		height: 60px;
+		border:2px solid #F33C78 ;
+		border-radius: 0px;
+		position: relative;
+		top: 0;
+		left: 900px;
+		cursor: pointer;
+		
+		overflow: hidden;
+	}
+	.button3::before
+	{
+		position: absolute;
+		content: '';
+		width: 320px;
+		height: 60px;
+		background: #F33C78;
+		transform: translateX(-150%)  ;
+		transition: all .3s ease;
+	}
+	.button3:hover::before
+	{
+		transform: translateX(-50%)
+	}
+	.button2:hover{
+		border-radius: 30px;
+		transition: all .3s ease;
+	}
+
+	.button4
+	{
+		width: 320px;
+		height: 60px;
+		border:2px solid #F33C78 ;
+		border-radius: 0px;
+		position: relative;
+		top: 60px;
+		left: 900px;
+		cursor: pointer;
+		
+		overflow: hidden;
+	}
+	
+	.button4::before
+	{
+		position: absolute;
+		content: '';
+		width: 320px;
+		height: 60px;
+		background: #F33C78;
+		transform: translateX(-50%) translateY(100%)  ;
+		transition: all .3s ease;
+	}
+	.button4:hover::before
+	{
+		transform: translateY(0%) translateX(-50%)
+	}
+	.button5
+	{
+		width: 320px;
+		height: 60px;
+		border:2px solid #F33C78 ;
+		border-radius: 0px;
+		position: relative;
+		top: -5px;
+		left: 500px;
+		cursor: pointer;
+		
+		/*overflow: hidden;*/
+	}
+	
+	.button5::before
+	{
+		position: absolute;
+		content: '';
+		width: 320px;
+		height: 60px;
+		background: #F33C78;
+		transform: translateX(-50%) scale(0,1) ;
+		transition: all .5s ease;
+	}
+	.button5:hover::before
+	{
+		transform:translateX(-50%) scale(1,1)
+	}
+	.text2
+	{
+		color: #fff;
+		font-family: "Roboto Condensed";
+		font-size: 22px;
+		letter-spacing: 8px;
+		line-height: 32px;
+		position: relative;
+		top: 15px;
+	}
+	
